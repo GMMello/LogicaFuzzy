@@ -3,7 +3,7 @@ import skfuzzy as skf
 from skfuzzy import control as ctrl
 
 #Função que recebe o método de defuzzificação e os valores de entrada das variáveis antecedentes
-def Fuzzy(defuzzification_methods, input_price, input_preparation_time, input_service_score):
+def fuzzy(defuzzification_methods, input_price, input_preparation_time, input_service_score):
     #Cria o conjunto universo das variáveis antecedentes e da consequente
     price = ctrl.Antecedent(np.arange(10, 301, 1), 'price')
     preparation_time = ctrl.Antecedent(np.arange(10, 120, 1), 'preparation time')
